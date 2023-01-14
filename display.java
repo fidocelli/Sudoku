@@ -98,10 +98,17 @@ class display extends Frame implements ActionListener
            tf[x1][y1].setBounds(x,y,30,30);
            tf[x1][y1].addActionListener(this);
            tf[x1][y1].setBackground(Color.black);
-           x = x+ 30;
+           if(y1==2||y1==5)
+           x=x+40;
+           else
+           x = x+ 32;
             f.add(tf[x1][y1]);
         }
-        y =y +30;
+        if(x1==2||x1==5)
+           y=y+40;
+           else
+           y = y+ 32;
+        
         }
         end.addActionListener(this);
         start.addActionListener(this);
